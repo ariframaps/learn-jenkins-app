@@ -6,6 +6,7 @@ pipeline {
             agent {
                 docker {
                     image 'node: 18-alpine'
+                    image 'alpine/git' // Menggunakan image Alpine dengan Git
                     reuseNode true
                 }
             }
